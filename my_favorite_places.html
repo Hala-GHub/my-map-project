@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cd7ec71a5049f550be5a078c565f8a17 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cd7ec71a5049f550be5a078c565f8a17" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cd7ec71a5049f550be5a078c565f8a17 = L.map(
+                "map_cd7ec71a5049f550be5a078c565f8a17",
+                {
+                    center: [51.0447, -114.0719],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e7dbf37558e9ddf677f506c0e14e6fc5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e7dbf37558e9ddf677f506c0e14e6fc5.addTo(map_cd7ec71a5049f550be5a078c565f8a17);
+        
+    
+            var marker_fdc5e3822341e5c64ff689c791b96802 = L.marker(
+                [51.0447, -114.0719],
+                {
+}
+            ).addTo(map_cd7ec71a5049f550be5a078c565f8a17);
+        
+    
+            var icon_2596260482086c4f78ed91a7f4721761 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a014a93751fb6f7a153cd1dc8593600 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c3c1c0a626019139fd09b8653029596 = $(`<div id="html_3c3c1c0a626019139fd09b8653029596" style="width: 100.0%; height: 100.0%;"><b>Calgary Tower</b><br>Click for more info!</div>`)[0];
+                popup_5a014a93751fb6f7a153cd1dc8593600.setContent(html_3c3c1c0a626019139fd09b8653029596);
+            
+        
+
+        marker_fdc5e3822341e5c64ff689c791b96802.bindPopup(popup_5a014a93751fb6f7a153cd1dc8593600)
+        ;
+
+        
+    
+    
+            marker_fdc5e3822341e5c64ff689c791b96802.bindTooltip(
+                `<div>
+                     Calgary Tower
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fdc5e3822341e5c64ff689c791b96802.setIcon(icon_2596260482086c4f78ed91a7f4721761);
+            
+    
+            var marker_ff20bfecc70630bd298f755093d4218d = L.marker(
+                [51.0465, -114.058],
+                {
+}
+            ).addTo(map_cd7ec71a5049f550be5a078c565f8a17);
+        
+    
+            var icon_af6b149e0eef7a40dff828c050c3738a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2b8b0b31f58d62810851b42884fd481 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_139d325c7c068b28379c86c13a94f1b0 = $(`<div id="html_139d325c7c068b28379c86c13a94f1b0" style="width: 100.0%; height: 100.0%;"><b>MUSEUM: Glenbow Museum</b><br>Entry: €16</div>`)[0];
+                popup_f2b8b0b31f58d62810851b42884fd481.setContent(html_139d325c7c068b28379c86c13a94f1b0);
+            
+        
+
+        marker_ff20bfecc70630bd298f755093d4218d.bindPopup(popup_f2b8b0b31f58d62810851b42884fd481)
+        ;
+
+        
+    
+    
+            marker_ff20bfecc70630bd298f755093d4218d.bindTooltip(
+                `<div>
+                     Glenbow Museum
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff20bfecc70630bd298f755093d4218d.setIcon(icon_af6b149e0eef7a40dff828c050c3738a);
+            
+    
+            var marker_756bc8755ef1a371cedb1131310cfdc7 = L.marker(
+                [51.0247, -114.087],
+                {
+}
+            ).addTo(map_cd7ec71a5049f550be5a078c565f8a17);
+        
+    
+            var icon_bfaf1f862f5386c806b0d840fa7d4577 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f3ef9ebf3f19c2187b18e8b7c36d62f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8c58fded85aaf006f8ff38e67b82c88 = $(`<div id="html_b8c58fded85aaf006f8ff38e67b82c88" style="width: 100.0%; height: 100.0%;"><b>RESTAURANT: Native Tongues Taqueria</b><br>Food: Mexican</div>`)[0];
+                popup_3f3ef9ebf3f19c2187b18e8b7c36d62f.setContent(html_b8c58fded85aaf006f8ff38e67b82c88);
+            
+        
+
+        marker_756bc8755ef1a371cedb1131310cfdc7.bindPopup(popup_3f3ef9ebf3f19c2187b18e8b7c36d62f)
+        ;
+
+        
+    
+    
+            marker_756bc8755ef1a371cedb1131310cfdc7.bindTooltip(
+                `<div>
+                     Native Tongues Taqueria
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_756bc8755ef1a371cedb1131310cfdc7.setIcon(icon_bfaf1f862f5386c806b0d840fa7d4577);
+            
+    
+            var marker_63d27b0f7e15ae46d23558330997728f = L.marker(
+                [51.0543, -114.0719],
+                {
+}
+            ).addTo(map_cd7ec71a5049f550be5a078c565f8a17);
+        
+    
+            var icon_00c39b09137f7f6d77f06f505c0c4cfa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf9723461836d684aaea9146d4cfd542 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8985dae6ca9bed3e2d119ed165ab7908 = $(`<div id="html_8985dae6ca9bed3e2d119ed165ab7908" style="width: 100.0%; height: 100.0%;"><b>PARK: Prince's Island Park</b><br>Playground: Yes</div>`)[0];
+                popup_bf9723461836d684aaea9146d4cfd542.setContent(html_8985dae6ca9bed3e2d119ed165ab7908);
+            
+        
+
+        marker_63d27b0f7e15ae46d23558330997728f.bindPopup(popup_bf9723461836d684aaea9146d4cfd542)
+        ;
+
+        
+    
+    
+            marker_63d27b0f7e15ae46d23558330997728f.bindTooltip(
+                `<div>
+                     Prince's Island Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_63d27b0f7e15ae46d23558330997728f.setIcon(icon_00c39b09137f7f6d77f06f505c0c4cfa);
+            
+</script>
+</html>
